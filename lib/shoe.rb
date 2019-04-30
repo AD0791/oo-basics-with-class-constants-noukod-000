@@ -6,6 +6,12 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    newBrand = []
+    BRANDS.each_with_index{ |b,i| 
+      if b[i] != b[i+1]
+        newBrand << b[i]
+    }
+    newBrand
   end
 
   def cobble
