@@ -10,6 +10,7 @@ class Shoe
     BRANDS.each_with_index do |b,i|
       if b[i] != b[i+1]
         newBrand << b[i]
+      end
     end
     newBrand
   end
