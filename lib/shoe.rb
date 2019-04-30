@@ -8,7 +8,6 @@ class Shoe
     BRANDS << brand
     newBrand = []
     BRANDS.each do |b|
-      
       if b != b
         newBrand << b
       end
