@@ -7,7 +7,7 @@ class Shoe
     @brand = brand
     BRANDS << brand
     newBrand = []
-    BRANDS.each_with_index{ |b,i| 
+    BRANDS.each_with_index{ |b,i|
       if b[i] != b[i+1]
         newBrand << b[i]
     }
